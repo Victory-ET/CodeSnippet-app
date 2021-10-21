@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  background: rgb(48, 48, 255);
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: Montserrat;
+}
+.cont{
+  color: #333;
+  margin-top: 5px;
+  background: rgb(214, 214, 214);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.main button{
+  width: fit-content;
+  flex-grow: unset;
+  display: inline-block;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5%;
+  font-weight: bold;
+  color: rgb(48, 48, 255);
+}
+
+.main button:hover{
+  cursor: pointer;
+}
+
+.links{
+  margin-top: 10px;
+}
+.links a{
+  margin-left: 5px;
+}
+
+.links a:hover{
+  cursor: pointer;
+}
+.btn{
+  left: 80%;
+  position: relative;
+}
