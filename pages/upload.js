@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import style from "../styles/form.module.css";
 import { Link } from "next/link";
 import { getSession } from 'next-auth/client'
@@ -16,7 +16,7 @@ function Upload({ snippet, user }) {
       name: snippet ? snippet.data.name : "",
     },
   });
-  const router = useRouter;
+  const router = useRouter();
   const createSnippet = async (data) => {
     const { code, language, description, name, mail } = data;
     // console.log(data);
